@@ -1,8 +1,13 @@
 # .pre-commit-config.yaml
 repos:
--   repo: https://github.com/Yelp/detect-secrets
-    rev: v1.4.0
+-   repo: https://github.com/pre-commit/mirrors-clang-format
+    rev: ''  # Use the sha / tag you want to point at
     hooks:
-    -   id: detect-secrets
-        args: ['--baseline', '.secrets.baseline']
-        exclude: package.lock.json
+    -   id: clang-format
+
+# -   repo: https://github.com/Yelp/detect-secrets
+#    rev: v1.4.0
+#    hooks:
+#    -   id: detect-secrets
+#        args: ['--baseline', '.secrets.baseline']
+#        exclude: package.lock.jsonA
